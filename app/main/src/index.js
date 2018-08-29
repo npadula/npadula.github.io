@@ -12,7 +12,7 @@ const typography = new Typography(funstonTheme);
 WebFont.load({
     google: {
         //families: ['Droid Sans', 'Droid Serif']
-        families: ['Patua One', 'Cabin Condensed']
+        families: ['Patua One', 'Roboto']
             //families: ['Source Sans Pro', 'Bitter']
     }
 });
