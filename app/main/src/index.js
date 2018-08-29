@@ -1,10 +1,10 @@
 import "babel-polyfill";
 import Typography from 'typography';
 import funstonTheme from 'typography-theme-funston';
-const d3 = require("d3");
+//const d3 = require("d3");
 import "./main.css";
 
-window.d3 = d3;
+//window.d3 = d3;
 
 
 const typography = new Typography(funstonTheme);

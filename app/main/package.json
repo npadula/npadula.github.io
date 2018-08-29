@@ -21,6 +21,7 @@
     "enter-view": "^1.0.0",
     "file-loader": "^1.1.11",
     "intersection-observer": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
     "scrollama": "^1.4.3",
     "stickyfill": "^1.1.1-strict",
     "typography": "^0.16.17",

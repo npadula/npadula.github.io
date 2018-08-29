@@ -1,6 +1,11 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-module.exports = {
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
+
+
+const commonConfig = {
   module: {
     rules: [
       {
@@ -44,4 +49,38 @@ module.exports = {
       chunkFilename: "[id].css"
     })
   ]
+};
+
+
+
+const prodConfig = {
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true // set to true if you want JS source maps
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  },
+
+};
+
+const devConfig = {};
+
+module.exports = (env, opts) => {
+  console.log(opts);
+
+  if(opts.mode == "production"){
+    return Object.assign(commonConfig,prodConfig);
+  }
+  
+  if(opts.mode == "development"){
+    return Object.assign(commonConfig,devConfig);
+  }
+
+  return commonConfig;
+
+
 };
