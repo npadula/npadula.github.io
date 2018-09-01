@@ -29,9 +29,9 @@ body {
 a,
 a:visited,
 a:hover {
-    color: var(--secondary-color);
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid currentColor !important;
 }
 
 .social-link {
@@ -66,7 +66,7 @@ hr.slashed-hr {
     margin-top: 8px;
 }
 
-.place-meta-container {
+.meta-container {
     margin-top: 8px;
 }
 
@@ -103,7 +103,7 @@ hr.slashed-hr {
         font-size: 1.6rem;
         margin-top: 12px;
     }
-    .place-meta-container {
+    .meta-container {
         margin-top: 20px;
     }
     .f3-ns {
