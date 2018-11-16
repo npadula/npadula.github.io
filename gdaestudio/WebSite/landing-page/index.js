@@ -103,13 +103,15 @@ function hideMenu() {
     $('.footer').removeClass('hidden');
 }
 
-$('#lateral').click(function (e) {
+function onLateralClick(e){
     e.preventDefault();
     isShowingMenu = ($('.animate').length > 0)
 
     if (isShowingMenu)
         hideMenu();
-});
+}
+
+$('#lateral').on("click",onLateralClick);
 
 $(document).ready(function () {
     $(".tile-container").hover(
@@ -125,5 +127,14 @@ $(document).ready(function () {
     $('.outer-nav a').click(function (e) {
         hideMenu();
         return false;
+    });
+
+
+    $("#scrollDown").click(function (e){
+        e.preventDefault();
+        var obrasHash = "#sectionObras";
+
+        var url = window.location.protocol + "//" + window.location.host + window.location.pathname + obrasHash;
+        window.location.href = url;
     });
 });

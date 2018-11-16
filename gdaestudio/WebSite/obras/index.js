@@ -126,4 +126,12 @@ $(document).ready(function () {
         hideMenu();
         return false;
     });
+
+    $("#scrollDown").click(function (e){
+        e.preventDefault();
+        var obrasHash = "#sectionObras";
+
+        var url = window.location.protocol + "//" + window.location.host + window.location.pathname + obrasHash;
+        window.location.href = url;
+    });
 });
