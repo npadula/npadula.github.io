@@ -135,7 +135,8 @@ span.stack-description-list{
 @media screen and (max-device-width: 950px) {
     .w-30,
     .w-70,
-    .w-50 {
+    .w-50,
+	.w-50-l	{
         display: block;
         width: 100%;
     }
