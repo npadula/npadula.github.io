@@ -19,6 +19,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+li {
+	list-style:disc;
+}
+
 body span,
 body p {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -117,6 +121,15 @@ a:hover {
     font-weight: 500;
     text-rendering: optimizeLegibility;
     line-height: 2.25rem;
+}
+
+
+span.stack-description-list{
+	font-size:0.9rem;
+    color: #9e9d9d;
+	display:block;
+	margin-top:3px;
+	margin-bottom:5px;
 }
 
 @media screen and (max-device-width: 950px) {
