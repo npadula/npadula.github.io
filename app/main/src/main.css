@@ -143,25 +143,28 @@ span.stack-description-list{
     .job-meta {
         display: block;
         width: 100%;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-top: 12px;
     }
     .meta-container {
         margin-top: 20px;
     }
     .f3-ns {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .f4-ns {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .f5-ns {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
+	.stack-description-list{
+		font-size:1.6rem !important;
+	}
     .job-place {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     .subheader {
-        font-size: 2.9rem;
+        font-size: 3.1rem;
     }
 }
